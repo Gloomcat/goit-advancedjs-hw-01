@@ -38,6 +38,8 @@ const onFeedbackFormSubmit = event => {
     return;
   }
 
+  console.log(formData);
+
   event.target.reset();
   localStorage.removeItem(localStorageKey);
 };
