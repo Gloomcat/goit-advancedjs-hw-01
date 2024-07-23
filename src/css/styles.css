@@ -1,9 +1,17 @@
-.container {
-  max-width: 1440px;
+body {
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
 }
 
 ul {
   list-style-type: none;
+}
+
+.container {
+  max-width: 1440px;
 }
 
 .gallery {
@@ -23,4 +31,55 @@ ul {
 .gallery-image:hover,
 .gallery-image:focus {
   transform: scale(1.04);
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 408px;
+  margin: 0 auto;
+}
+
+label {
+  color: #2E2F42;
+}
+
+.feedback-form-input {
+  display: block;
+  width: 360px;
+  padding: 8px 16px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  font-weight: inherit;
+}
+
+.feedback-form-input:hover
+.feedback-form-input:focus {
+  border: 1px solid #000000;
+}
+
+.feedback-form > button {
+  width: 95px;
+  padding: 8px 16px;
+  color: #FFFFFF;
+  background-color: #4E75FF;
+  border-radius: 8px;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  font-weight: 500;
+}
+
+.feedback-form > button:hover,
+.feedback-form > button:focus {
+  background-color: #6C8CFF;
 }
