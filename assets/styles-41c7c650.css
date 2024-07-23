@@ -1,1 +1,0 @@
-.container{max-width:1440px}ul{list-style-type:none}.gallery{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;margin:0 auto;padding:24px 156px;gap:24px}.gallery-image{transition:transform .25s cubic-bezier(.4,0,.2,1)}.gallery-image:hover,.gallery-image:focus{transform:scale(1.04)}
