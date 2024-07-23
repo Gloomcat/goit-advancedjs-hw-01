@@ -34,6 +34,10 @@ const onFormFieldChange = event => {
 const onFeedbackFormSubmit = event => {
   event.preventDefault();
 
+  if (formData.email === '' || formData.message === '') {
+    return;
+  }
+
   event.target.reset();
   localStorage.removeItem(localStorageKey);
 };
