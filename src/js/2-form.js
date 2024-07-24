@@ -1,4 +1,4 @@
-const formData = {
+let formData = {
   email: '',
   message: '',
 };
