@@ -86,7 +86,6 @@ const createGalleryItem = image => {
 const galleryItems = images.map(image => createGalleryItem(image)).join('');
 
 const galleryContainer = document.querySelector('.gallery');
-galleryContainer.append(...galleryItems);
 galleryContainer.innerHTML = galleryItems;
 
 let gallery = new SimpleLightbox('.gallery a', {
