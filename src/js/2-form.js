@@ -14,6 +14,8 @@ const fillFormFields = form => {
     return;
   }
 
+  formData = formDataFromLocalStorage;
+
   for (const key in formDataFromLocalStorage) {
     if (formDataFromLocalStorage.hasOwnProperty(key)) {
       form.elements[key].value = formDataFromLocalStorage[key];
@@ -35,10 +37,16 @@ const onFeedbackFormSubmit = event => {
   event.preventDefault();
 
   if (formData.email === '' || formData.message === '') {
+    alert('Fill please all fields');
     return;
   }
 
   console.log(formData);
+
+  formData = {
+    email: '',
+    message: '',
+  };
 
   event.target.reset();
   localStorage.removeItem(localStorageKey);
